@@ -14,6 +14,7 @@
           <br>
         <div class="flex-container_1" v-for="announce in announcements">
           <div class="flex-container_SpCard" :style="{ 'backgroundColor': announce.Card_Color }">
+            <div class="grid_Internal">
             <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
             <h2><h2a :style="{ 'color': announce.Title_Font_Color }">{{ announce.Special_Announcement_Title }}</h2a></h2>
             <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span></div>
@@ -26,6 +27,7 @@
             <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
               <img style='height: 100%; width: 100%; object-fit: contain' :src="announce.Special_Announcement_Graphic_Link">
             </a>
+            </div>
             </div>
           </div>
           <br>
