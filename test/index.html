@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES Kids Church Online Video Links and Parent Resources</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <br>
+    <br>
+    <div class="flex-container_Base_A" id="OnlineKidsChurchLinks">
+        <span v-cloak>
+        <div class="flex-container_1"  v-for="link in links">
+          
+          <div class="flex-container_2A"  style="text-align: center"  :style="{ 'backgroundColor': link.Week_Card_Color }">
+              <h2><h2a :style="{ 'color': link.Title_Font_Color }">IES Kids Church <br>
+                Online Video Links & Parent Resources<br>
+                {{ link.Week }}</h2a></h2>
+                </div>
+                <p>
+                </p>
+
+           <div class="flex-container_2A" :style="{ 'backgroundColor': link.Week_Card_Color }">
+            <div class="grid_Internal">
+              <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+                <div class="flex-item_1">
+              <h2><h2a :style="{ 'color': link.Title_Font_Color }">Early Years,<br>
+                 <span style="font-size: 50%">For kids 5 & Under. </span></h2a></h2>
+                </div>
+                <div class="flex-item_1">
+                  <a :href="link.EarlyYears_Video_Link" target="_blank">
+                    <img style='height: auto; width: 100%; object-fit: contain' :src="link.EarlyYears_Video_Thumbnail">
+                    </a>
+                </div>
+              <div class="flex-item_2">
+              <h4><h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a></h4>
+              <a v-bind:href="link.EarlyYears_Video_Link" target="_blank">Online Kids Church Video</a>
+              <p style="font-size:60%">{{ link.EarlyYears_Text }}</p>
+
+
+              
+                <h4><h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a></h4>
+                
+                <div v-if="link.EarlyYears_ParentLink">
+                <p style="line-height:50%"><span style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
+                the discussion through the week. You'll find links below to help you do that and to help
+                with your sanity while everyone's home all day long.</span><br>
+                <a style="font-size:100%; line-height: 110%" v-bind:href="link.EarlyYears_ParentLink" target="_blank">
+                Parent's Lesson Extention Link</a><br></p>
+              </div>
+              
+              <div v-if="link.EarlyYears_MusicLinks">
+              <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                  to our regular IES Kids Early Years worship songs.</span><br>
+              <a style="font-size:100%; line-height: 110%" v-bind:href="link.EarlyYears_MusicLinks" target="_blank">Music Resources</a></p>
+              </div>
+
+              <div v-if="link.EarlyYears_ResourcesHTML"> 
+                <p style="line-height:50%"> <span style="font-size:60%">Some PreTeens resources for 
+                  while you're at home</span><br>
+                  <span v-html="link.EarlyYears_ResourcesHTML"></span></p>
+                </div> 
+                <br>
+                <br>
+               </div>
+              </div>
+
+
+
+              <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+                  <div class="flex-item_1">
+                <h2><h2a :style="{ 'color': link.Title_Font_Color }">Elementary Years,<br>
+                   <span style="font-size: 50%">For kids 6 to 10 years of age. </span></h2a></h2>
+                  </div>
+                  <div class="flex-item_1">
+                    <a :href="link.ElementaryYears_Video_Link" target="_blank">
+                      <img style='height: auto; width: 100%; object-fit: contain' :src="link.ElementaryYears_Video_Thumbnail">
+                      </a>
+                  </div>
+                <div class="flex-item_2">
+                <h4><h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a></h4>
+                <a v-bind:href="link.ElementaryYears_Video_Link" target="_blank">Online Kids Church Video</a>
+                <p style="font-size:60%">{{ link.ElementaryYears_Text }}</p>
+  
+  
+                <div v-if="link.ElementaryYears_ParentLink">
+                  <h4><h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a></h4>
+                  <p style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
+                  the discussion through the week. You'll find links below to help you do that and to help
+                  with your sanity while everyone's home all day long.</p>
+                  <span style="font-size: 100%;"><a v-bind:href="link.ElementaryYears_ParentLink" target="_blank">
+                  Parent's Lesson Extention Link</a></span>
+                  <br>
+                </div>
+                
+                <div v-if="link.ElementaryYears_MusicLinks">
+                <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                    to our regular IES Kids Elementary Years worship songs.</span><br>
+                <a style="font-size:100%; line-height: 110%" v-bind:href="link.ElementaryYears_MusicLinks" target="_blank">Music Resources</a></p>
+                </div>
+  
+                <div v-if="link.ElementaryYears_ResourcesHTML"> 
+                  <p style="line-height:50%"> <span style="font-size:60%">Some Elementary Years resources for 
+                    while you're at home</span><br>
+                    <span v-html="link.ElementaryYears_ResourcesHTML"></span></p>
+                  </div>
+                 </div>
+                 <br>
+                 <br>
+                </div>
+
+
+                <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+                    <div class="flex-item_1">
+                  <h2><h2a :style="{ 'color': link.Title_Font_Color }">PreTeens,<br>
+                     <span style="font-size: 50%">For our kids 10 to 12 years old. </span></h2a></h2>
+                    </div>
+                    <div class="flex-item_1">
+                      <a :href="link.ElementaryYears_Video_Link" target="_blank">
+                        <img style='height: auto; width: 100%; object-fit: contain' :src="link.PreTeens_Video_Thumbnail">
+                        </a>
+                    </div>
+                  <div class="flex-item_2">
+                  <h4><h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a></h4>
+                  <a v-bind:href="link.PreTeens_Video_Link" target="_blank">Online Kids Church Video</a>
+                  <p style="font-size:60%">{{ link.PreTeens_Text }}</p>
+    
+    
+                  <div v-if="link.PreTeens_ParentLink">
+                    <h4><h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a></h4>
+                    <p style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
+                    the discussion through the week. You'll find links below to help you do that and to help
+                    with your sanity while everyone's home all day long.</p>
+                    <span style="font-size: 100%;"><a v-bind:href="link.PreTeens_ParentLink" target="_blank">
+                    Parent's Lesson Extention Link</a></span><br>
+                  </div>
+                  
+                  <div v-if="link.PreTeens_MusicLinks">
+                  <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                      to our regular IES Kids Early Years worship songs.</span><br>
+                  <a style="font-size:100%; line-height: 110%" v-bind:href="link.PreTeens_MusicLinks" target="_blank">Music Resources</a></p>
+                  </div>
+    
+                  <div v-if="link.PreTeens_ResourcesHTML"> 
+                    <p style="line-height:50%"> <span style="font-size:60%">Some PreTeens resources for 
+                      while you're at home</span><br>
+                      <span v-html="link.PreTeens_ResourcesHTML"></span></p>
+                    </div>
+                    <br>
+                    <br>
+                   </div>
+                  </div>
+
+              
+
+              </div>
+            </div>
+            </div>
+              <br>
+          </span>
+        </div>
+
+        <div class="flex-container__Base_A" id="SpAnnounce">
+          <span v-cloak>
+          <br>
+        <div v-for="announce in announcements">
+          <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+            <div class="grid_Internal">
+            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+            <h2><h2a :style="{ 'color': announce.Title_Font_Color }">{{ announce.Special_Announcement_Title }}</h2a></h2>
+            <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span></div>
+            <div v-if="announce.Special_Announcement_Link"><br>
+              <a v-bind:href="announce.Special_Announcement_Link" target="_blank">{{ announce.Special_Announcement_Title }} </a>
+            </div>
+            </div>
+            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }" 
+            v-if="announce.Special_Announcement_Graphic_Link">
+            <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+              <img style='height: 100%; width: 100%; object-fit: contain' :src="announce.Special_Announcement_Graphic_Link">
+            </a>
+            </div>
+            </div>
+          </div>
+          <br>
+        </div>
+        </span>
+      </div>
+
+        </div>
+  </body>  
+  <script src="https://unpkg.com/vue"></script>
+  <script  language="JavaScript"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="vueCommon.js"></script>
+</html>
