@@ -63,9 +63,7 @@
                 <p style="line-height:100%">Some EarlyYears resources for 
                   while you're at home</span><br></p>
                   <p><span v-html="link.EarlyYears_ResourcesHTML"></span></p>
-                </div> 
-                <br>
-                <br>
+                </div>
                </div>
               </div>
 
@@ -120,16 +118,29 @@
                   <h2><h2a :style="{ 'color': link.Title_Font_Color }">PreTeens,<br>
                      <span style="font-size: 50%">For our kids 10 to 12 years old. </span></h2a></h2>
                     </div>
+
+                  <div v-if="link.PreTeens_Video_Link">
                     <div v-if="link.PreTeens_Video_Link" class="flex-item_1">
                       <a :href="link.ElementaryYears_Video_Link" target="_blank">
                         <img style='height: auto; width: 100%; object-fit: contain' :src="link.PreTeens_Video_Thumbnail">
                         </a>
                     </div>
+                  </div>
+
                   <div class="flex-item_2">
+
+                  <div v-if="link.PreTeens_Video_Link">
                   <h4><h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a></h4>
                   <a v-if="link.PreTeens_Video_Link" v-bind:href="link.PreTeens_Video_Link" target="_blank">Online Kids Church Video</a>
                   <p style="font-size:60%">{{ link.PreTeens_Text }}</p>
-    
+                  </div>
+
+                  <div v-if="!!link.PreTeens_Video_Link"></div>
+                  <div v-if="link.PreTeens_ResourcesHTML"> 
+                      <p><span v-html="link.PreTeens_ResourcesHTML"></span></p>
+                    </div>
+                  </div>
+
     
                   <div v-if="link.PreTeens_ParentLink">
                     <h4><h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a></h4>
@@ -145,12 +156,14 @@
                       to our regular IES Kids Early Years worship songs.</span><br>
                   <a style="font-size:100%; line-height: 110%" v-bind:href="link.PreTeens_MusicLinks" target="_blank">Music Resources</a></p>
                   </div>
-    
+
+                  <div v-if="link.PreTeens_Video_Link">
                   <div v-if="link.PreTeens_ResourcesHTML"> 
                     <p style="line-height:100%">Some PreTeens resources for 
-                      while you're at home</span><br></p>
+                      while you're at home<br></p>
                       <p><span v-html="link.PreTeens_ResourcesHTML"></span></p>
                     </div>
+                  </div>
                     <br>
                     <br>
                    </div>
@@ -159,16 +172,17 @@
               
 
               </div>
+              
+              <p> 
+               <br> <! –– More Space between -->
+              </p>
             </div>
             <p>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
+           
             </p>
             </div>
-              <br>
+          </div>
+          <br>
           </span>
         </div>
 
