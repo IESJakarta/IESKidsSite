@@ -118,14 +118,14 @@
                   <h2><h2a :style="{ 'color': link.Title_Font_Color }">PreTeens,<br>
                      <span style="font-size: 50%">For our kids 10 to 12 years old. </span></h2a></h2>
                     </div>
-                    <div class="flex-item_1">
+                    <div v-if="link.PreTeens_Video_Link" class="flex-item_1">
                       <a :href="link.ElementaryYears_Video_Link" target="_blank">
                         <img style='height: auto; width: 100%; object-fit: contain' :src="link.PreTeens_Video_Thumbnail">
                         </a>
                     </div>
                   <div class="flex-item_2">
                   <h4><h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a></h4>
-                  <a v-bind:href="link.PreTeens_Video_Link" target="_blank">Online Kids Church Video</a>
+                  <a v-if="link.PreTeens_Video_Link" v-bind:href="link.PreTeens_Video_Link" target="_blank">Online Kids Church Video</a>
                   <p style="font-size:60%">{{ link.PreTeens_Text }}</p>
     
     
