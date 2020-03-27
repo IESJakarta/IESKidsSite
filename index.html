@@ -48,15 +48,16 @@
                 <p style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
                 the discussion through the week. You'll find links below to help you do that and to help
                 with your sanity while everyone's home all day long.</p>
-                <span style="font-size: 100%;"></span><a v-bind:href="link.EarlyYears_ParentLink" target="_blank">
-                Parent's Lesson Extention Link</a</span>
+                <a v-bind:href="link.EarlyYears_ParentLink" target="_blank">
+                Parent's Lesson Extention Link</a>
                 <br>
               </div>
               
               <div v-if="link.EarlyYears_MusicLinks">
-              <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
-                  to our regular IES Kids Early Years worship songs.</span><br>
-              <a style="font-size:100%; line-height: 110%" v-bind:href="link.EarlyYears_MusicLinks" target="_blank">Music Resources</a></p>
+                <p style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                  to our regular IES Kids Early Years worship songs.</p>
+                <a v-bind:href="link.EarlyYears_MusicLinks" target="_blank">
+                  Music Resources</a></p>
               </div>
 
               <div v-if="link.EarlyYears_ResourcesHTML"> 
@@ -66,6 +67,7 @@
                 </div>
                </div>
               </div>
+            </span>
 
 
 
@@ -91,15 +93,16 @@
                   <p style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
                   the discussion through the week. You'll find links below to help you do that and to help
                   with your sanity while everyone's home all day long.</p>
-                  <span style="font-size: 100%;"><a v-bind:href="link.ElementaryYears_ParentLink" target="_blank">
-                  Parent's Lesson Extention Link</a></span>
+                  <a v-bind:href="link.ElementaryYears_ParentLink" target="_blank">
+                  Parent's Lesson Extention Link</a>
                   <br>
                 </div>
                 
                 <div v-if="link.ElementaryYears_MusicLinks">
-                <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
-                    to our regular IES Kids Elementary Years worship songs.</span><br>
-                <a style="font-size:100%; line-height: 110%" v-bind:href="link.ElementaryYears_MusicLinks" target="_blank">Music Resources</a></p>
+                <p style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                    to our regular IES Kids Elementary Years worship songs.</p>
+                <p><a v-bind:href="link.ElementaryYears_MusicLinks" target="_blank">
+                  Music Resources</a></p>
                 </div>
   
                 <div v-if="link.ElementaryYears_ResourcesHTML"> 
@@ -139,22 +142,25 @@
                   <div v-if="link.PreTeens_ResourcesHTML"> 
                       <p><span v-html="link.PreTeens_ResourcesHTML"></span></p>
                     </div>
-                  </div>
+                  
 
     
                   <div v-if="link.PreTeens_ParentLink">
                     <h4><h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a></h4>
+
                     <p style="font-size:60%">We hope you'll sit and watch with your kids, then can carry on 
                     the discussion through the week. You'll find links below to help you do that and to help
                     with your sanity while everyone's home all day long.</p>
-                    <span style="font-size: 100%;"><a v-bind:href="link.PreTeens_ParentLink" target="_blank">
-                    Parent's Lesson Extention Link</a></span><br>
+                    <a v-bind:href="link.PreTeens_ParentLink" target="_blank">
+                    Parent's Lesson Extention Link</a>
+                    <br>
                   </div>
                   
                   <div v-if="link.PreTeens_MusicLinks">
-                  <p style="line-height:50%"> <span style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
-                      to our regular IES Kids Early Years worship songs.</span><br>
-                  <a style="font-size:100%; line-height: 110%" v-bind:href="link.PreTeens_MusicLinks" target="_blank">Music Resources</a></p>
+                  <p style="font-size:60%">Why not get down with your kids and do a little worship.  This is a link
+                      to our regular IES Kids Early Years worship songs.</p>
+                  <p><a v-bind:href="link.PreTeens_MusicLinks" target="_blank">
+                    Music Resources</a></p>
                   </div>
 
                   <div v-if="link.PreTeens_Video_Link">
