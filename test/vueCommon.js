@@ -1,4 +1,4 @@
-const url = "https://api.steinhq.com/v1/storages/5d0374a0e8f87532b83a4e3b/SpAnnouncement_Output";  
+const url = "https://api.steinhq.com/v1/storages/5d0374a0e8f87532b83a4e3b/TestSpAnnouncement_Output";  
 const vm = new Vue({
   el: '#SpAnnounce',
   data: {
