@@ -1,11 +1,11 @@
-# IESKidsOnlineWeekly
-Weekly On-line Curriculum Page
+# IESKidsSite
+Weekly On-line Kids Church access Page
 
 Initiated at the start of the Covid-19 pandemic to share video Kids Church with kids and resources with their parents.
 
 
 
-https://msrody.github.io/IESKidsOnlineWeekly/
+https://IESKids.github.io/IESKidsSite/
 
 Ther is also a simple test page in the /test folder.
 
