@@ -52,7 +52,7 @@
                     <h2>
                         <h2a :style="{ 'color': link.Title_Font_Color }">IES Kids Church <br>
                             Online Video Links & Parent Resources<br>
-                            link.Week</h2a>
+                            {{ link.Week }}</h2a>
                     </h2>
                 </div>
                 <p>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="flex-item_2">
                                 <h4>
-                                    <h2a :style="{ 'color': link.Title_Font_Color }">link.Week</h2a>
+                                    <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
                                 </h4>
                                 <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week" target="_blank">Online Kids Church Video</a>
                                 <p style="font-size:80%">{{ link.EarlyYears_Text }}</p>
@@ -131,7 +131,7 @@
         </div>
         <div class="flex-item_2">
             <h4>
-                <h2a :style="{ 'color': link.Title_Font_Color }">link.Week</h2a>
+                <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
             </h4>
             <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week" target="_blank">Online Kids Church Video</a>
             <p style="font-size:80%">{{ link.ElementaryYears_Text }}</p>
@@ -188,7 +188,7 @@
 
             <div v-if="link.PreTeens_Video_Link">
                 <h4>
-                    <h2a :style="{ 'color': link.Title_Font_Color }">link.Week</h2a>
+                    <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
                 </h4>
                 <a v-if="link.PreTeens_Video_Link" v-bind:href="link.PreTeens_Video_Link + '&ref=PreTeens_Video_Link_' + link.Week" target="_blank">Online Kids
                     Church Video</a>
