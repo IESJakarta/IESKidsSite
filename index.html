@@ -15,11 +15,22 @@
         gtag('config', 'UA-162798697-1');
     </script>
     <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PBMR8RN');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PBMR8RN');
+    </script>
     <!-- End Google Tag Manager -->
 
 
@@ -29,16 +40,52 @@
     <title>IES Kids Church Online Video Links and Parent Resources</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" type="image/svg+xml" href="IES_Kids_Logo.svg"/>
+    <link rel="icon" type="image/svg+xml" href="IES_Kids_Logo.svg" />
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBMR8RN"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBMR8RN" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-    
+
+
+
+    <div class="flex-container__Base_A" id="SpAnnounce">
+        <span v-cloak>
+            <br>
+            <div v-for="announce in announcements">
+                <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Top' ">
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </div>
+                                <div v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </div>
+                            </div>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 60%; width: 60%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </span>
+    </div>
+
+
     <br>
     <br>
     <div class="flex-container_Base_A" id="OnlineKidsChurchLinks">
@@ -68,7 +115,8 @@
                                 </h2>
                             </div>
                             <div class="flex-item_1">
-                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week" target="_blank">
+                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                    target="_blank">
                                     <img style='height: auto; width: 100%; object-fit: contain'
                                         :src="link.EarlyYears_Video_Thumbnail">
                                 </a>
@@ -77,7 +125,8 @@
                                 <h4>
                                     <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
                                 </h4>
-                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week" target="_blank">Online Kids Church Video</a>
+                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                    target="_blank">Online Kids Church Video</a>
                                 <p style="font-size:80%">{{ link.EarlyYears_Text }}</p>
 
 
@@ -92,7 +141,8 @@
                                         the discussion through the week. You'll find links below to help you do that and
                                         to help
                                         with your sanity while everyone's home all day long.</p>
-                                    <a v-bind:href="link.EarlyYears_ParentLink + '&ref=EarlyYears_ParentLink_' + link.Week" target="_blank">
+                                    <a v-bind:href="link.EarlyYears_ParentLink + '&ref=EarlyYears_ParentLink_' + link.Week"
+                                        target="_blank">
                                         Parent's Lesson Extension Link</a>
                                     <br>
                                 </div>
@@ -101,7 +151,8 @@
                                     <p style="font-size:80%">Why not get down with your kids and do a little worship.
                                         This is a link
                                         to our regular IES Kids Early Years worship songs.</p>
-                                    <a v-bind:href="link.EarlyYears_MusicLinks + '&ref=EarlyYears_MusicLinks_' + link.Week" target="_blank">
+                                    <a v-bind:href="link.EarlyYears_MusicLinks + '&ref=EarlyYears_MusicLinks_' + link.Week"
+                                        target="_blank">
                                         Music Resources</a></p>
                                 </div>
 
@@ -125,7 +176,8 @@
             </h2>
         </div>
         <div class="flex-item_1">
-            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week" target="_blank">
+            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                target="_blank">
                 <img style='height: auto; width: 100%; object-fit: contain' :src="link.ElementaryYears_Video_Thumbnail">
             </a>
         </div>
@@ -133,7 +185,8 @@
             <h4>
                 <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
             </h4>
-            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week" target="_blank">Online Kids Church Video</a>
+            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                target="_blank">Online Kids Church Video</a>
             <p style="font-size:80%">{{ link.ElementaryYears_Text }}</p>
 
 
@@ -145,7 +198,8 @@
                 <p style="font-size:80%">We hope you'll sit and watch with your kids, then can carry on
                     the discussion through the week. You'll find links below to help you do that and to help
                     with your sanity while everyone's home all day long.</p>
-                <a v-bind:href="link.ElementaryYears_ParentLink + '&ref=ElementaryYears_ParentLink_' + link.Week" target="_blank">
+                <a v-bind:href="link.ElementaryYears_ParentLink + '&ref=ElementaryYears_ParentLink_' + link.Week"
+                    target="_blank">
                     Parent's Lesson Extension Link</a>
                 <br>
             </div>
@@ -153,7 +207,8 @@
             <div v-if="link.ElementaryYears_MusicLinks">
                 <p style="font-size:80%">Why not get down with your kids and do a little worship. This is a link
                     to our regular IES Kids Elementary Years worship songs.</p>
-                <p><a v-bind:href="link.ElementaryYears_MusicLinks + '&ref=ElementaryYears_MusicLinks_' + link.Week" target="_blank">
+                <p><a v-bind:href="link.ElementaryYears_MusicLinks + '&ref=ElementaryYears_MusicLinks_' + link.Week"
+                        target="_blank">
                         Music Resources</a></p>
             </div>
 
@@ -178,7 +233,8 @@
 
         <div v-if="link.PreTeens_Video_Link">
             <div v-if="link.PreTeens_Video_Link" class="flex-item_1">
-                <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week" target="_blank">
+                <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                    target="_blank">
                     <img style='height: auto; width: 100%; object-fit: contain' :src="link.PreTeens_Video_Thumbnail">
                 </a>
             </div>
@@ -190,7 +246,9 @@
                 <h4>
                     <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
                 </h4>
-                <a v-if="link.PreTeens_Video_Link" v-bind:href="link.PreTeens_Video_Link + '&ref=PreTeens_Video_Link_' + link.Week" target="_blank">Online Kids
+                <a v-if="link.PreTeens_Video_Link"
+                    v-bind:href="link.PreTeens_Video_Link + '&ref=PreTeens_Video_Link_' + link.Week"
+                    target="_blank">Online Kids
                     Church Video</a>
                 <p style="font-size:80%">{{ link.PreTeens_Text }}</p>
             </div>
@@ -256,30 +314,32 @@
         <span v-cloak>
             <br>
             <div v-for="announce in announcements">
-                <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
-                    <div class="grid_Internal">
-                        <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
-                            <h2>
-                                <h2a :style="{ 'color': announce.Title_Font_Color }">
-                                    {{ announce.Special_Announcement_Title }}</h2a>
-                            </h2>
-                            <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Bottom' ">
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </div>
+                                <div v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </div>
                             </div>
-                            <div v-if="announce.Special_Announcement_Link"><br>
-                                <a v-bind:href="announce.Special_Announcement_Link"
-                                    target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 100%; width: 100%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
                             </div>
-                        </div>
-                        <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
-                            v-if="announce.Special_Announcement_Graphic_Link">
-                            <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
-                                <img style='height: 100%; width: 100%; object-fit: contain'
-                                    :src="announce.Special_Announcement_Graphic_Link">
-                            </a>
                         </div>
                     </div>
+                    <br>
                 </div>
-                <br>
             </div>
         </span>
     </div>
