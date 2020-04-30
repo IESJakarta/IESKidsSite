@@ -24,7 +24,7 @@ const vml = new Vue({
     }
 });
 
-const urlll = "https://api.steinhq.com/v1/storages/5d0374a0e8f87532b83a4e3b/TestSpAnnouncement_Output";  
+const urlll = "https://api.steinhq.com/v1/storages/5d0374a0e8f87532b83a4e3b/SpAnnouncement_Output";  
 const vmll = new Vue({
   el: '#SpAnnounceB',
   data: {
