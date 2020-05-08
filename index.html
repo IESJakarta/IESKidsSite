@@ -240,34 +240,18 @@
             </h2>
         </div>
 
-        <div v-if="link.PreTeens_Video_Link">
-            <div v-if="link.PreTeens_Video_Link" class="flex-item_1">
-                <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
-                    target="_blank">
-                    <img style='height: auto; width: 100%; object-fit: contain' :src="link.PreTeens_Video_Thumbnail">
-                </a>
-            </div>
-        </div>
 
         <div class="flex-item_2">
+            <div v-if="link.PreTeensZoomDetails">
+                <p><span v-html="link.PreTeensZoomDetails"></span></p>
+            </div>
 
-            <div v-if="link.PreTeens_Video_Link">
                 <h4>
                     <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
                 </h4>
-                <a v-if="link.PreTeens_Video_Link"
-                    v-bind:href="link.PreTeens_Video_Link + '&ref=PreTeens_Video_Link_' + link.Week"
-                    target="_blank">Online Kids
-                    Church Video</a>
+               
+                
                 <p style="font-size:80%">{{ link.PreTeens_Text }}</p>
-            </div>
-
-            <div v-if="!!link.PreTeens_Video_Link"></div>
-            <div v-if="link.PreTeens_ResourcesHTML">
-                <p><span style="font-size:80%" v-html="link.PreTeens_ResourcesHTML"></span></p>
-            </div>
-
-
 
             <div v-if="link.PreTeens_ParentLink">
                 <h4>
@@ -277,7 +261,7 @@
                 <p style="font-size:80%">We hope you'll sit and watch with your kids, then can carry on
                     the discussion through the week. You'll find links below to help you do that and to help
                     with your sanity while everyone's home all day long.</p>
-                <a v-bind:href="link.PreTeens_ParentLink + '&ref=PreTeens_ParentLink_' + link.Week" target="_blank">
+                <a v-bind:href="link.PreTeens_ParentLink" target="_blank">
                     Parent's Lesson Extension Link</a>
                 <br>
             </div>
@@ -285,17 +269,15 @@
             <div v-if="link.PreTeens_MusicLinks">
                 <p style="font-size:80%">Why not get down with your kids and do a little worship. This is a link
                     to our regular IES Kids worship songs.</p>
-                <p><a v-bind:href="link.PreTeens_MusicLinks + '&ref=PreTeens_MusicLinks_' + link.Week" target="_blank">
+                <p><a v-bind:href="link.PreTeens_MusicLinks" target="_blank">
                         Music Resources</a></p>
             </div>
 
-            <div v-if="link.PreTeens_Video_Link">
                 <div v-if="link.PreTeens_ResourcesHTML">
                     <p style="line-height:100%">Some PreTeens resources for
                         while you're at home<br></p>
                     <p><span style="font-size:80%" v-html="link.PreTeens_ResourcesHTML"></span></p>
                 </div>
-            </div>
             <br>
             <br>
         </div>
