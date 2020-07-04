@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162798697-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162798697-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PBMR8RN');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link href="https://ieskids.org/" rel="canonical">
+    <title>IES Kids Church Online</title>
+    <meta name="keywords" content="Kids Church Online, Children's Ministry, Jakarta, Indonesia">
+    <meta name="description"
+        content="IES Kids Church Online has weekly age appropriate Video Links for Early Years and Elementary Years with resources to help parents carry on the lesson discussion through the week. We also provide activities, crafts, devotionals and other resources to help parents minister to kids at home each week. ">
+    <meta name="author" content="IES Kids Ministry Team - IES, Jakarta">
+
+    <meta property="og:title" content="IES Kids Church Online">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="IES Kids Church Online has weekly age appropriate Video Links for Early Years and Elementary Years with resources to help parents carry on the lesson discussion through the week. We also provide activities, crafts, devotionals and other resources to help parents minister to kids at home each week.">
+    <meta property="og:image"
+        content="https://www.iesjakarta.org/wp-content/uploads/2015/02/IES_Kids_Logo_2017_SqWBuffer150dpi.png">
+    <meta property="og:url" content="https://ieskids.org/">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/svg+xml" href="IES_Kids_Logo.svg" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBMR8RN" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="flex-container__Base_A" id="SpAnnounce" v-if="announce.Page_on_which_to_show___Home_Page_ === 'Top' ">
+        <span v-cloak>
+            <br>
+            <div v-for="announce in announcements">
+                <div>
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </div>
+                                <div v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </div>
+                            </div>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 60%; width: 60%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </span>
+    </div>
+
+
+
+    <div class="flex-container_Base_A" id="OnlineKidsChurchLinks">
+        <span v-cloak>
+
+            <div class="flex-container_1" v-for="link in links">
+
+                <h2 style="text-align: center;">
+                    <h2a>IES Kids Church <br></h2a>
+                </h2>
+                <h4 style="text-align: center;">Online Video Links & Parent Resources</h4>
+
+
+                <div class="grid_Internal">
+                    <div class="flex-container_3A">
+                        <div class="flex-item_1">
+                            <h2>Early Years,<br></h2>
+                            <h4 style="text-align: center;">For kids 5 & Under.</h4>
+                        </div>
+                        <div class="flex-item_1">
+                            <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                target="_blank">
+                                <img style='height: auto; width: 100%; object-fit: contain'
+                                    :src="link.EarlyYears_Video_Thumbnail">
+                            </a>
+                        </div>
+                        <div class="flex-item_2">
+                            <h4>{{ link.Week }}
+                            </h4>
+                            <p>{{ link.EarlyYears_Text }}</p>
+                            <ul>
+                                <li>
+                                    <div v-if="link.EarlyYears_ParentLink">
+
+                                        <a v-bind:href="link.EarlyYears_ParentLink + '&ref=EarlyYears_ParentLink_' + link.Week"
+                                            target="_blank">
+                                            Parent's Lesson Extension Link</a>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div v-if="link.EarlyYears_MusicLinks">
+                                        <a v-bind:href="link.EarlyYears_MusicLinks + '&ref=EarlyYears_MusicLinks_' + link.Week"
+                                            target="_blank">
+                                            Music Resources</a>
+                                    </div>
+                                </li>
+
+                                <li><a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                        target="_blank">Online Early Years Kids Church Video</a></li>
+                            </ul>
+
+                            <div v-if="link.EarlyYears_ResourcesHTML">
+                                <h4>EarlyYears resources for while you're at home</h4>
+                                <p><span v-html="link.EarlyYears_ResourcesHTML"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex-container_3A">
+                        <div class="flex-item_1">
+                            <h2>
+                                Elementary Years,<br></h2>
+                            <h4>For kids 6 to 10 years of age. </h4>
+
+                        </div>
+                        <div class="flex-item_1">
+                            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                                target="_blank">
+                                <img style='height: auto; width: 100%; object-fit: contain'
+                                    :src="link.ElementaryYears_Video_Thumbnail">
+                            </a>
+                        </div>
+                        <div class="flex-item_2">
+                            <h4>{{ link.Week }}
+                            </h4>
+                            <p>{{ link.ElementaryYears_Text }}
+                                <ul>
+                                    <li>
+                                        <div v-if="link.ElementaryYears_ParentLink">
+                                            <a v-bind:href="link.ElementaryYears_ParentLink + '&ref=ElementaryYears_ParentLink_' + link.Week"
+                                                target="_blank">
+                                                Parent's Lesson Extension Link</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div v-if="link.ElementaryYears_MusicLinks">
+                                            <a v-bind:href="link.ElementaryYears_MusicLinks + '&ref=ElementaryYears_MusicLinks_' + link.Week"
+                                                target="_blank">
+                                                Music Resources</a>
+                                        </div>
+                                    </li>
+                                    <li><a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                                            target="_blank">Online Kids Church Video</a></li>
+                                </ul>
+
+                                <div v-if="link.ElementaryYears_ResourcesHTML">
+                                    <h4>Elementary Years resources for
+                                        while you're at home
+        </span><br></h4>
+        <p><span v-html="link.ElementaryYears_ResourcesHTML"></span></p>
+    </div>
+    </p>
+    </div>
+    </div>
+
+
+    <div class="flex-container_3A">
+        <div class="flex-item_1">
+            <h2>PreTeens,<br> </h2>
+            <h4>For our kids 10 to 12 years old.</h4>
+        </div>
+
+        <div class="flex-item_2">
+            <div v-if="link.PreTeensZoomDetails">
+                <p>
+                    <div v-html="link.PreTeensZoomDetails"></div>
+                </p>
+            </div>
+
+            <h4>{{ link.Week }}
+            </h4>
+
+
+            <p>{{ link.PreTeens_Text }}</p>
+
+            <ul>
+                <li>
+                    <div v-if="link.PreTeens_ParentLink">
+                        <a v-bind:href="link.PreTeens_ParentLink + '&ref=PreTeens_ParentLink_' + link.Week"
+                            target="_blank">
+                            Parent's Lesson Extension Link</a>
+                        <br>
+                    </div>
+                </li>
+
+                <li>
+                    <div v-if="link.PreTeens_MusicLinks">
+
+                        <a v-bind:href="link.PreTeens_MusicLinks + '&ref=PreTeens_MusicLinks_' + link.Week"
+                            target="_blank">
+                            Music Resources</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div v-if="link.PreTeens_Video_Link">
+                <div v-if="link.PreTeens_ResourcesHTML">
+                    <p style="line-height:100%">Some PreTeens resources for
+                        while you're at home<br></p>
+                    <p v-html="link.PreTeens_ResourcesHTML"></p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div></div></div></div>
+    </span>
+
+
+    <div class="flex-container__Base_A" id="SpAnnounceB">
+        <span v-cloak>
+            <br>
+            <div v-for="announce in announcementsB">
+                <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Bottom' ">
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <p style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </p>
+                                <p v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </p>
+                            </div>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 100%; width: 100%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </span>
+    </div>
+</body>
+
+<script src="https://unpkg.com/vue"></script>
+<script language="JavaScript"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="vueCommon.js"></script>
+
+</html>

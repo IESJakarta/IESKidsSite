@@ -1,0 +1,184 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+}
+div {
+    font-family: 'Barlow', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: normal;
+    line-height: 100% !important;
+    margin: 1px;
+    color: black;
+}
+p {
+    margin: 3px;
+    font-size: 20px;
+}
+h2a {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: normal;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    text-align:center;
+}
+h4 {
+    font-family: 'Barlow', sans-serif;
+    color: Black;
+    letter-spacing: normal;
+    font-weight: bold;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    font-size: 90%;
+
+}
+hr { 
+    width: 100%;
+    border-style: inset;
+    border-width: 1.5px;
+}
+.flex-container_Base_A {
+    width: 100%;
+    background-color: white;
+}
+.flex-container_1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.flex-container_2A {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: white;
+    padding: .1%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid_Internal {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 10px;
+    width: 98%;
+}
+.flex-container_3A {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.flex-item_1 {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.flex-item_2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex: 1;
+}
+.flex-item_L {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+    align-items: left;
+    text-align:left;
+    flex: 0 0 auto;
+}
+.flex-item_R {
+    display: -webkit-flex;
+    display: flex;
+    width: 25%
+    align-items: right;
+    text-align:right;
+}
+.flex-container_SpCard {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.flex-item_SpText {
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: rgb(141, 185, 170);
+    padding: 1%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+}
+.flex-item_SpItems {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(141, 185, 170);
+    padding: 2%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    -webkit-flex: 1 0 35%;
+    flex: 1 0 35%;
+}
+.flex-container_BaseSp {
+    display: -webkit-flex;
+    display: flex;
+    width: 95%;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: white;
+    align-content: center;
+    padding: 1%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+[v-cloak] {
+    display:none;
+  }
