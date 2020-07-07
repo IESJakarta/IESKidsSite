@@ -2,10 +2,6 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-div {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
 h1, h2, h3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
@@ -22,7 +18,6 @@ p {
     font-weight: 100;
 }
 h2a {
-    font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: normal;
     color: rgb(0, 0, 0);
     font-size: 100%;
