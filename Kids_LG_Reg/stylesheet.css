@@ -60,7 +60,7 @@ hr {
 .flex-container_2A {
     display: -webkit-flex;
     display: flex;
-    width: 95%;
+    width: 99%;
     flex: 1;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
