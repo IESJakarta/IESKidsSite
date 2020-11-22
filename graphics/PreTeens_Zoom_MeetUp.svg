@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="215.65625"
+   height="126.72586"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="PreTeens_Zoom_MeetUp.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="826"
+     id="namedview6"
+     showgrid="false"
+     fit-margin-top="3"
+     fit-margin-left="3"
+     fit-margin-right="3"
+     fit-margin-bottom="3"
+     inkscape:zoom="1"
+     inkscape:cx="120.55218"
+     inkscape:cy="105.64561"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
+  <g
+     id="g24"
+     transform="translate(0.71651552,5.009202)">
+    <g
+       id="g35"
+       transform="matrix(1.0096313,0,0,1.0096313,-1.0316242,-0.56202236)">
+      <path
+         d="m 157.38131,51.929321 c 0.61159,1.05519 0.81168,2.255728 0.87775,3.60539 l 0.0868,1.798919 v 12.579221 l 0.0887,1.800807 c 0.17744,2.94094 2.34633,5.115499 5.30993,5.300488 l 1.79141,0.08872 V 57.33363 l 0.0887,-1.798919 c 0.0736,-1.33456 0.27182,-2.55775 0.89286,-3.620492 a 7.1843515,7.1843515 0 0 1 12.43953,0.02265 c 0.6116,1.055191 0.80225,2.278381 0.87587,3.59784 l 0.0887,1.793257 v 12.584883 l 0.0887,1.800807 c 0.18499,2.956041 2.3369,5.130601 5.30993,5.300488 l 1.79142,0.08872 V 55.534711 A 14.383804,14.383804 0 0 0 172.73347,41.150905 14.346051,14.346051 0 0 0 161.94562,46.0229 14.364928,14.364928 0 0 0 151.15776,41.149018 c -2.98624,0 -5.75729,0.906066 -8.05266,2.470918 -1.40063,-1.562964 -4.53411,-2.470918 -6.33303,-2.470918 v 35.953847 l 1.79892,-0.08872 c 3.0089,-0.198202 5.18346,-2.314245 5.30049,-5.300488 l 0.0963,-1.800807 V 57.33363 l 0.0887,-1.798919 c 0.0755,-1.357212 0.26427,-2.5502 0.87775,-3.612941 a 7.2032279,7.2032279 0 0 1 6.22354,-3.582737 7.191902,7.191902 0 0 1 6.22355,3.590288 z m -123.079686,25.086713 1.798919,0.08683 h 26.964913 l -0.08872,-1.793256 C 62.733231,72.353567 60.63984,70.194109 57.67436,70.00157 L 55.875441,69.91285 H 39.698381 L 61.266537,48.337144 61.177817,46.545775 C 61.038132,43.559531 58.856022,41.40196 55.875441,41.237736 l -1.798918,-0.08117 -26.964914,-0.0076 0.08872,1.798919 c 0.235955,2.927727 2.359548,5.132489 5.300489,5.302377 l 1.800807,0.08872 h 16.17706 l -21.568155,21.575705 0.08872,1.79892 c 0.177438,2.963592 2.316132,5.109837 5.302376,5.300488 z M 129.71419,46.411753 a 17.97598,17.97598 0 0 1 0,25.424601 17.989193,17.989193 0 0 1 -25.43026,0 c -7.02013,-7.020127 -7.02013,-18.404472 0,-25.424601 a 17.966542,17.966542 0 0 1 12.7038,-5.264623 17.979755,17.979755 0 0 1 12.72646,5.266511 z m -5.08718,5.090961 a 10.791628,10.791628 0 0 1 0,15.255893 10.791628,10.791628 0 0 1 -15.2559,0 10.791628,10.791628 0 0 1 0,-15.255893 10.791628,10.791628 0 0 1 15.2559,0 z M 79.257618,41.14713 a 17.966542,17.966542 0 0 1 12.703806,5.266511 c 7.022014,7.018241 7.022014,18.404474 0,25.422713 a 17.989193,17.989193 0 0 1 -25.430264,0 c -7.020127,-7.020127 -7.020127,-18.404472 0,-25.424601 A 17.966542,17.966542 0 0 1 79.234966,41.14713 Z m 7.61662,10.351809 a 10.791628,10.791628 0 0 1 0,15.257781 10.791628,10.791628 0 0 1 -15.255892,0 10.791628,10.791628 0 0 1 0,-15.255893 10.791628,10.791628 0 0 1 15.255892,0 z"
+         id="path2"
+         inkscape:connector-curvature="0"
+         style="fill:#2d8cff;fill-rule:evenodd;stroke-width:1.88764" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="7.0276251"
+         y="16.801001"
+         id="text814"><tspan
+           sodipodi:role="line"
+           id="tspan812"
+           x="7.0276251"
+           y="16.801001">Be sure to catch </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="36.594032"
+         y="37.734062"
+         id="text818"><tspan
+           sodipodi:role="line"
+           id="tspan816"
+           x="36.594032"
+           y="37.734062">This week's </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="56.873329"
+         y="97.123932"
+         id="text822"><tspan
+           sodipodi:role="line"
+           id="tspan820"
+           x="56.873329"
+           y="97.123932">Meet up</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         x="1.3030157"
+         y="117.80099"
+         id="text826"><tspan
+           sodipodi:role="line"
+           id="tspan824"
+           x="1.3030157"
+           y="117.80099">For IES PreTeens!</tspan></text>
+    </g>
+  </g>
+</svg>
