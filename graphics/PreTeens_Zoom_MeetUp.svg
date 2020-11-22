@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="215.65625"
-   height="126.72586"
+   width="163.54102"
+   height="121.1284"
    version="1.1"
    id="svg4"
    sodipodi:docname="PreTeens_Zoom_MeetUp.svg"
@@ -40,21 +40,22 @@
      inkscape:window-height="826"
      id="namedview6"
      showgrid="false"
-     fit-margin-top="3"
-     fit-margin-left="3"
-     fit-margin-right="3"
-     fit-margin-bottom="3"
-     inkscape:zoom="1"
-     inkscape:cx="120.55218"
-     inkscape:cy="105.64561"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="1.4281275"
+     inkscape:cx="-112.85887"
+     inkscape:cy="-66.021703"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4"
-     inkscape:document-rotation="0" />
+     inkscape:current-layer="g35"
+     inkscape:document-rotation="0"
+     borderlayer="false" />
   <g
      id="g24"
-     transform="translate(0.71651552,5.009202)">
+     transform="translate(-25.341105,1.5610121)">
     <g
        id="g35"
        transform="matrix(1.0096313,0,0,1.0096313,-1.0316242,-0.56202236)">
@@ -66,42 +67,42 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="7.0276251"
+         x="35.747864"
          y="16.801001"
          id="text814"><tspan
            sodipodi:role="line"
            id="tspan812"
-           x="7.0276251"
+           x="35.747864"
            y="16.801001">Be sure to catch </tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="36.594032"
+         x="56.111771"
          y="37.734062"
          id="text818"><tspan
            sodipodi:role="line"
            id="tspan816"
-           x="36.594032"
+           x="56.111771"
            y="37.734062">This week's </tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="56.873329"
+         x="73.343704"
          y="97.123932"
          id="text822"><tspan
            sodipodi:role="line"
            id="tspan820"
-           x="56.873329"
+           x="73.343704"
            y="97.123932">Meet up</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:24px;line-height:70%;font-family:'Barlow Condensed';-inkscape-font-specification:'Barlow Condensed, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="1.3030157"
+         x="31.811832"
          y="117.80099"
          id="text826"><tspan
            sodipodi:role="line"
            id="tspan824"
-           x="1.3030157"
+           x="31.811832"
            y="117.80099">For IES PreTeens!</tspan></text>
     </g>
   </g>
