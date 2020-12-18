@@ -2,275 +2,342 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162798697-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162798697-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-162798697-1');
-  </script>
+        gtag('config', 'UA-162798697-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PBMR8RN');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+    <link href="https://ieskids.org/" rel="canonical">
+    <title>IES Kids Church Online</title>
+    <meta name="keywords" content="Kids Church Online, Children's Ministry, Jakarta, Indonesia">
+    <meta name="description" content="IES Kids Church Online has weekly age appropriate Video Links for Early Years and Elementary Years with resources to help parents carry on the lesson discussion through the week. We also provide activities, crafts, devotionals and other resources to help parents minister to kids at home each week. ">
+    <meta name="author" content="IES Kids Ministry Team - IES, Jakarta">
 
-  <meta charset="utf-8">
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cur Links</title>
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta property="og:title" content="IES Kids Church Online">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="IES Kids Church Online has weekly age appropriate Video Links for Early Years and Elementary Years with resources to help parents carry on the lesson discussion through the week. We also provide activities, crafts, devotionals and other resources to help parents minister to kids at home each week.">
+    <meta property="og:image" content="https://www.iesjakarta.org/wp-content/uploads/2015/02/IES_Kids_Logo_2017_SqWBuffer150dpi.png">
+    <meta property="og:url" content="https://ieskids.org/">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" type="image/svg+xml" href="IES_Kids_Logo.svg" />
 </head>
 
 <body>
-  <div class="flex-container__BaseSp" id="SpAnnounce">
-    <span v-cloak>
-      <br>
-      <div v-for="announce in announcements">
-        <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Top' ">
-          <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
-            <div class="grid_Internal">
-              <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
-                <h2>
-                  <h2a :style="{ 'color': announce.Title_Font_Color }">
-                    {{ announce.Special_Announcement_Title }}</h2a>
-                </h2>
-                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
-                </div>
-                <div v-if="announce.Special_Announcement_Link"><br>
-                  <a v-bind:href="announce.Special_Announcement_Link"
-                    target="_blank">{{ announce.Special_Announcement_Title }} </a>
-                </div>
-              </div>
-              <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
-                v-if="announce.Special_Announcement_Graphic_Link">
-                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
-                  <img style='height: 100%; width: 100%; object-fit: contain'
-                    :src="announce.Special_Announcement_Graphic_Link">
-                </a>
-              </div>
-            </div>
-          </div>
-          <br>
-        </div>
-      </div>
-    </span>
-  </div>
-  <br>
-  <br>
-  <div class="flex-container_Base_A" id="CurLinks">
-    <span v-cloak>
-      <div class="flex-container_1" v-for="link in links">
-        <hr />
-        <hr />
-        <hr />
-        <p style="text-align: center; font-size: 120%; font-weight: bold;
-           font-style: italic;line-height: 1.01;">
-          This page is for internal use only for IES Kids Leaders and Teachers.<br>
-          Please do not share or distribute these links or their contents.</p>
-        <hr />
-        <hr />
-        <hr />
-        <br>
-        <br>
-        <div class="flex-container_2A" :style="{ 'backgroundColor': link.Month_Card_Color }">
-          <h2>
-            <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Month }}</h2a>
-          </h2>
-        </div>
-        <br>
-        <div class="flex-container_2A" :style="{ 'backgroundColor': link.Month_Card_Color }">
-          <div class="grid_Internal">
-            <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
-              <div class="flex-item_1">
-                <h2>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">3U<br>
-                    {{ link.Month }} Curriculum Links</h2a>
-                </h2>
-              </div>
-              <div class="flex-item_1">
-                <a :href="link.FL_2U_Month_Intro_Video_Link" target="_blank">
-                  <img style='height: auto; width: 100%; object-fit: contain'
-                    :src="link.FL_2U_Month_Intro_Video_Thumbnail">
-                </a>
-              </div>
-              <div class="flex-item_2">
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Month }} Preview Video</h2a>
-                </h4>
-                <a v-bind:href="link.FL_2U_Month_Intro_Video_Link" target="_blank">Month Preview</a>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Leader Manuals</h2a>
-                </h4>
-                <span style="font-size: 100%;"><a v-bind:href="link.FL_2U_Leader_Manual_Compete_Link"
-                    target="_blank">Leader Manual Complete</a><br>
-                  <a v-bind:href="link.FL_2U_Leader_Manual_Link" target="_blank">Leader Manual only</a><br>
-                  <a v-bind:href="link.FL_2U_Activity_Pages_Link" target="_blank">Activity Pages</a></span>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Other Resources</h2a>
-                </h4>
-                <a v-bind:href="link.FL_2U_Music_Folder_Link" target="_blank">Music Resources</a>
-                <a v-bind:href="link.Other_2U_Resource_Links" target="_blank">Opening Games, Bible Memory & Closing</a>
-              </div>
-              <div class="flex-item_1"><span style="font-size: 50%">Curriculum is secured in Google Drive by your
-                  inclusion in this Team's Google Group.
-                  To access, you must first accept your group invitation. To request a new invitation, please email
-                  <a href="mailto:patty@iesjakarta.org?subject=New%203U%20Team%20Google%20Groups%20invitation"
-                    target="_top">patty@iesjakarta.org
-                  </a>to inform us of the Google account(s) you would like added to the group.
-                </span></div>
-            </div>
-            <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
-              <div class="flex-item_1">
-                <h2>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">4-5<br>
-                    {{ link.Month }} Curriculum Links</h2a>
-                </h2>
-              </div>
-              <div class="flex-item_1">
-                <a :href="link.FL_3to5_Month_Intro_Video_Link" target="_blank">
-                  <img style='height: auto; width: 100%; object-fit: contain'
-                    :src="link.FL_3to5_Month_Intro_Video_Thumbnail">
-                </a>
-              </div>
-              <div class="flex-item_2">
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Month }} Preview Video</h2a>
-                </h4>
-                <a v-bind:href="link.FL_3to5_Month_Intro_Video_Link" target="_blank">Month Preview</a>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Leader Manuals</h2a>
-                </h4>
-                <span style="font-size: 100%;"><a v-bind:href="link.FL_3to5_Leader_Manual_Compete_Link"
-                    target="_blank">Leader Manual Complete </a><br>
-                  <a v-bind:href="link.FL_3to5_Leader_Manual_Link" target="_blank">Leader Manual Only</a><br>
-                  <a v-bind:href="link.FL_3to5_Activity_Pages_Link" target="_blank">Activity Pages</a></span>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Other Resources</h2a>
-                </h4>
-                <a v-bind:href="link.FL_3to5_Music_Folder_Link" target="_blank">Music Resources</a>
-              </div>
-              <div class="flex-item_1"><span style="font-size: 50%">Curriculum is secured in Google Drive by your
-                  inclusion in this Team's Google Group.
-                  To access, you must first accept your group invitation. To request a new invitation, please email
-                  <a href="mailto:patty@iesjakarta.org?subject=New%204%20to%205%20Team%20Google%20Groups%20invitation"
-                    target="_top">patty@iesjakarta.org
-                  </a>to inform us of the Google account(s) you would like added to the group.
-                </span></div>
-            </div>
-            <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
-              <div class="flex-item_1">
-                <h2>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">6-10<br>
-                    {{ link.Month }} Curriculum Links</h2a>
-                </h2>
-              </div>
-              <div class="flex-item_1">
-                <a :href="link.O_252_6to10_Kids_Monthly_Intro_Video_Link" target="_blank">
-                  <img style='height: auto; width: 100%; object-fit: contain'
-                    :src="link.O_252_6to10_Kids_Monthly_Intro_Video_Thumbnail">
-                </a>
-              </div>
-              <div class="flex-item_2">
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Month }} Preview Video</h2a>
-                </h4>
-                <a v-bind:href="link.O_252_6to10_Kids_Monthly_Intro_Video_Link" target="_blank">Month Preview</a>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Leader Manuals</h2a>
-                </h4>
-                <span style="font-size: 100%;"><a v-bind:href="link.O_252_6to10_Kids_Leader_Manual_Compete_Link"
-                    target="_blank">Leader Manual Complete</a><br>
-                  <a v-bind:href="link.O_252_6to10_Kids_Leader_Manual_Link" target="_blank">Leader Manual
-                    only</a></span>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Other Resources</h2a>
-                </h4>
-                <a v-bind:href="link.O_252_6to10_Kids_Music_Folder_Link" target="_blank">Music Resources</a>
-                <a v-bind:href="link.O_252_6to10_Kids_Activity_Pages_Link" target="_blank">Activity Pages</a>
-              </div>
-              <div class="flex-item_1"><span style="font-size: 50%">Curriculum is secured in Google Drive by your
-                  inclusion in this Team's Google Group.
-                  To access, you must first accept your group invitation. To request a new invitation, please email
-                  <a href="mailto:patty@iesjakarta.org?subject=New%206%20to%2010%20Team%20Google%20Groups%20invitation"
-                    target="_top">patty@iesjakarta.org
-                  </a>to inform us of the Google account(s) you would like added to the group.
-                </span></div>
-            </div>
-            <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
-              <div class="flex-item_1">
-                <h2>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">PreTeens<br>
-                    {{ link.Month }} Curriculum Links</h2a>
-                </h2>
-              </div>
-              <div class="flex-item_2">
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Month }} Leader Manuals</h2a>
-                </h4>
-                <span style="font-size: 100%;"><a v-bind:href="link.Week_1_All_In_One" target="_blank">Week 1 - All in
-                    one.pdf</a><br>
-                  <a v-bind:href="link.Week_2_All_In_One" target="_blank">Week 2 - All in one.pdf</a></span>
-                <a v-bind:href="link.Week_3_All_In_One" target="_blank">Week 3 - All in one.pdf</a>
-                <a v-bind:href="link.Week_4_All_In_One" target="_blank">Week 4 - All in one.pdf</a>
-                <a v-if="link.Week_5_All_In_One !== null" v-bind:href="link.Week_5_All_In_One" target="_blank">Week 5 -
-                  All in one.pdf</a>
-                <h4>
-                  <h2a :style="{ 'color': link.Title_Font_Color }">Other Resources</h2a>
-                </h4>
-                <a v-bind:href="link.Resources_Folder" target="_blank">Resources Folder</a>
-              </div>
-              <div class="flex-item_1"><span style="font-size: 50%">Curriculum is secured in Google Drive by your
-                  inclusion in this Team's Google Group.
-                  To access, you must first accept your group invitation. To request a new invitation, please email
-                  <a href="mailto:patty@iesjakarta.org?subject=New%20PreTeens%20Team%20Google%20Groups%20invitation"
-                    target="_top">patty@iesjakarta.org
-                  </a>to inform us of the Google account(s) you would like added to the group.
-                </span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-    </span>
-  </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBMR8RN" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-  <div class="flex-container__Base_A" id="SpAnnounceB">
-    <span v-cloak>
-      <br>
-      <div v-for="announce in announcementsB">
-        <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Bottom' ">
-          <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
-            <div class="grid_Internal">
-              <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
-                <h2>
-                  <h2a :style="{ 'color': announce.Title_Font_Color }">
-                    {{ announce.Special_Announcement_Title }}</h2a>
-                </h2>
-                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+
+
+    <div class="flex-container__Base_A" id="SpAnnounce">
+        <span v-cloak>
+            <br>
+            <div v-for="announce in announcements">
+                <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Top' ">
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </div>
+                                <div v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </div>
+                            </div>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 100%; width: 100%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </div>
-                <div v-if="announce.Special_Announcement_Link"><br>
-                  <a v-bind:href="announce.Special_Announcement_Link"
-                    target="_blank">{{ announce.Special_Announcement_Title }} </a>
-                </div>
-              </div>
-              <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
-                v-if="announce.Special_Announcement_Graphic_Link">
-                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
-                  <img style='height: 100%; width: 100%; object-fit: contain'
-                    :src="announce.Special_Announcement_Graphic_Link">
-                </a>
-              </div>
             </div>
-          </div>
-          <br>
-        </div>
-      </div>
+        </span>
+    </div>
+
+
+    <br>
+    <br>
+    <div class="flex-container_Base_A" id="OnlineKidsChurchLinks">
+        <span v-cloak>
+
+
+            <div class="flex-container_1" v-for="link in links">
+
+                <div class="flex-container_2A" style="text-align: center"
+                    :style="{ 'backgroundColor': link.Week_Card_Color }">
+                    <h2>
+                        <h2a :style="{ 'color': link.Title_Font_Color }">IES Kids Church <br>
+                            Online Video Links & Parent Resources<br>
+                            {{ link.Week }}</h2a>
+                    </h2>
+                </div>
+                <p>
+                </p>
+
+                <div class="flex-container_2A" :style="{ 'backgroundColor': link.Week_Card_Color }">
+                    <div class="grid_Internal">
+                        <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+                            <div class="flex-item_1">
+                                <h2>
+                                    <h2a :style="{ 'color': link.Title_Font_Color }">Early Years,<br>
+                                        <span style="font-size: 50%">For kids 5 & Under. </span></h2a>
+                                </h2>
+                            </div>
+                            <div class="flex-item_1">
+                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                    target="_blank">
+                                    <img style='height: auto; width: 100%; object-fit: contain'
+                                        :src="link.EarlyYears_Video_Thumbnail">
+                                </a>
+                            </div>
+                            <div class="flex-item_2">
+                                <h4>
+                                    <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
+                                </h4>
+                                <a v-bind:href="link.EarlyYears_Video_Link + '&ref=EarlyYears_Video_Link_' + link.Week"
+                                    target="_blank">Online Kids Church Video</a>
+                                <p style="font-size:80%">{{ link.EarlyYears_Text }}</p>
+
+
+
+                                <div v-if="link.EarlyYears_ParentLink">
+                                    <h4>
+                                        <h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a>
+                                    </h4>
+
+                                    <p style="font-size:80%">We hope you'll sit and watch with your kids, then can carry
+                                        on
+                                        the discussion through the week. You'll find links below to help you do that and
+                                        to help
+                                        with your sanity while everyone's home all day long.</p>
+                                    <a v-bind:href="link.EarlyYears_ParentLink + '&ref=EarlyYears_ParentLink_' + link.Week"
+                                        target="_blank">
+                                        Parent's Lesson Extension Link</a>
+                                    <br>
+                                </div>
+
+                                <div v-if="link.EarlyYears_MusicLinks">
+                                    <p style="font-size:80%">Why not get down with your kids and do a little worship.
+                                        This is a link
+                                        to our regular IES Kids Early Years worship songs.</p>
+                                    <a v-bind:href="link.EarlyYears_MusicLinks + '&ref=EarlyYears_MusicLinks_' + link.Week"
+                                        target="_blank">
+                                        Music Resources</a></p>
+                                </div>
+
+                                <div v-if="link.EarlyYears_ResourcesHTML">
+                                    <p style="line-height:100%">Some EarlyYears resources for
+                                        while you're at home
+        </span><br></p>
+        <p><span style="font-size:80%" v-html="link.EarlyYears_ResourcesHTML"></span></p>
+    </div>
+    </div>
+    </div>
     </span>
-  </div>
-</div>
+
+
+
+    <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+        <div class="flex-item_1">
+            <h2>
+                <h2a :style="{ 'color': link.Title_Font_Color }">Elementary Years,<br>
+                    <span style="font-size: 50%">For kids 6 to 10 years of age. </span></h2a>
+            </h2>
+        </div>
+        <div class="flex-item_1">
+            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                target="_blank">
+                <img style='height: auto; width: 100%; object-fit: contain' :src="link.ElementaryYears_Video_Thumbnail">
+            </a>
+        </div>
+        <div class="flex-item_2">
+            <h4>
+                <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
+            </h4>
+            <a v-bind:href="link.ElementaryYears_Video_Link + '&ref=ElementaryYears_Video_Link_' + link.Week"
+                target="_blank">Online Kids Church Video</a>
+            <p style="font-size:80%">{{ link.ElementaryYears_Text }}</p>
+
+
+            <div v-if="link.ElementaryYears_ParentLink">
+                <h4>
+                    <h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a>
+                </h4>
+
+                <p style="font-size:80%">We hope you'll sit and watch with your kids, then can carry on
+                    the discussion through the week. You'll find links below to help you do that and to help
+                    with your sanity while everyone's home all day long.</p>
+                <a v-bind:href="link.ElementaryYears_ParentLink + '&ref=ElementaryYears_ParentLink_' + link.Week"
+                    target="_blank">
+                    Parent's Lesson Extension Link</a>
+                <br>
+            </div>
+
+            <div v-if="link.ElementaryYears_MusicLinks">
+                <p style="font-size:80%">Why not get down with your kids and do a little worship. This is a link
+                    to our regular IES Kids Elementary Years worship songs.</p>
+                <p><a v-bind:href="link.ElementaryYears_MusicLinks + '&ref=ElementaryYears_MusicLinks_' + link.Week"
+                        target="_blank">
+                        Music Resources</a></p>
+            </div>
+
+            <div v-if="link.ElementaryYears_ResourcesHTML">
+                <p style="line-height:100%">Some Elementary Years resources for
+                    while you're at home</span><br></p>
+                <p><span style="font-size:80%" v-html="link.ElementaryYears_ResourcesHTML"></span></p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+
+    <div class="flex-container_3A" :style="{ 'backgroundColor': link.Curriculum_level_box_Color }">
+        <div class="flex-item_1">
+            <h2>
+                <h2a :style="{ 'color': link.Title_Font_Color }">PreTeens,<br>
+                    <span style="font-size: 50%">For our kids 10 to 12 years old. </span></h2a>
+            </h2>
+        </div>
+
+
+        <div class="flex-item_2">
+            <div v-if="link.PreTeensZoomDetails">
+                <p><div v-html="link.PreTeensZoomDetails"></div></p>
+            </div>
+
+                <h4>
+                    <h2a :style="{ 'color': link.Title_Font_Color }">{{ link.Week }}</h2a>
+                </h4>
+               
+                
+                <p style="font-size:80%">{{ link.PreTeens_Text }}</p>
+
+            <div v-if="link.PreTeens_ParentLink">
+                <h4>
+                    <h2a :style="{ 'color': link.Title_Font_Color }">Parent Resources</h2a>
+                </h4>
+
+                <p style="font-size:80%">We hope you'll sit and watch with your kids, then can carry on
+                    the discussion through the week. You'll find links below to help you do that and to help
+                    with your sanity while everyone's home all day long.</p>
+                <a v-bind:href="link.PreTeens_ParentLink" target="_blank">
+                    Parent's Lesson Extension Link</a>
+                <br>
+            </div>
+
+            <div v-if="link.PreTeens_MusicLinks">
+                <p style="font-size:80%">Why not get down with your kids and do a little worship. This is a link
+                    to our regular IES Kids worship songs.</p>
+                <p><a v-bind:href="link.PreTeens_MusicLinks" target="_blank">
+                        Music Resources</a></p>
+            </div>
+
+                <div v-if="link.PreTeens_ResourcesHTML">
+                    <p style="line-height:100%">Some PreTeens resources for
+                        while you're at home<br></p>
+                    <p><span style="font-size:80%" v-html="link.PreTeens_ResourcesHTML"></span></p>
+                </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <p>
+        <br>
+        <! –– More Space between -->
+    </p>
+    </div>
+    <p>
+
+    </p>
+    </div>
+    </div>
+    <br>
+    </span>
+    </div>
+
+    <div class="flex-container__Base_A" id="SpAnnounceB">
+        <span v-cloak>
+            <br>
+            <div v-for="announce in announcementsB">
+                <div v-if="announce.Page_on_which_to_show___Home_Page_ === 'Bottom' ">
+                    <div class="flex-container_2A" :style="{ 'backgroundColor': announce.Card_Color }">
+                        <div class="grid_Internal">
+                            <div class="flex-item_SpText" :style="{ 'backgroundColor': announce.Box_Color }">
+                                <h2>
+                                    <h2a :style="{ 'color': announce.Title_Font_Color }">
+                                        {{ announce.Special_Announcement_Title }}</h2a>
+                                </h2>
+                                <div style="text-align:center"><span v-html="announce.Special_Announcement_Text"></span>
+                                </div>
+                                <div v-if="announce.Special_Announcement_Link"><br>
+                                    <a v-bind:href="announce.Special_Announcement_Link"
+                                        target="_blank">{{ announce.Special_Announcement_Title }} </a>
+                                </div>
+                            </div>
+                            <div class="flex-item_SpItems" :style="{ 'backgroundColor': announce.Box_Color }"
+                                v-if="announce.Special_Announcement_Graphic_Link">
+                                <a v-bind:href="announce.Special_Announcement_Link" target="_blank">
+                                    <img style='height: 100%; width: 100%; object-fit: contain'
+                                        :src="announce.Special_Announcement_Graphic_Link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </span>
+    </div>
+
+    </div>
 </body>
+
 <script src="https://unpkg.com/vue"></script>
 <script language="JavaScript"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
